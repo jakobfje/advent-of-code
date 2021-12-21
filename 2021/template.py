@@ -34,8 +34,8 @@ testResult2 = ""
 data = getLines("xxinput.txt")
 
 print()
-testAndVerify(1, str(task1(testData)), testResult1)
-# print("Task 1, Answer: " + str(task1(data)))
+testAndVerify(1, task1(testData), testResult1)
+print("Task 1, Answer: " + str(task1(data)))
 # testAndVerify(2, str(task2(testData)), testResult2)
 # print("Task 2, Answer: " + str(task2(data)))
 print()
