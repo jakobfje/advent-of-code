@@ -22,6 +22,8 @@ func main() {
 		switch day {
 		case 1:
 			y22.Day01()
+		case 2:
+			y22.Day02()
 		default:
 			fmt.Println("Did not participate that day")
 		}
