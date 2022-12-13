@@ -22,23 +22,17 @@ func DayXX() {
 	linesTest := getLines(strings.NewReader(inputXX))
 	linesReal := getLines(bufio.NewReader(f))
 
-	fmt.Println(dayXXTask1(linesTest))
-	fmt.Println(dayXXTask1(linesReal))
-	fmt.Println(dayXXTask2(linesTest))
-	fmt.Println(dayXXTask2(linesReal))
+	fmt.Println("Task 1 test data:", dayXXTask1(linesTest))
+	fmt.Println("Task 1 real data:", dayXXTask1(linesReal))
+	fmt.Println("Task 2 test data:", dayXXTask2(linesTest))
+	fmt.Println("Task 2 real data:", dayXXTask2(linesReal))
 
 }
 
 func dayXXTask1(lines []string) string {
-	helperOutput := helper(lines)
-	return fmt.Sprintf("%d", helperOutput)
+	return fmt.Sprintf("%d", len(lines))
 }
 
 func dayXXTask2(lines []string) string {
-	helperOutput := helper(lines)
-	return fmt.Sprintf("%d", helperOutput)
-}
-
-func helper(lines []string) int {
-	return len(lines)
+	return fmt.Sprintf("%d", len(lines))
 }
