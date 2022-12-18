@@ -30,6 +30,8 @@ func main() {
 			y22.Day04()
 		case 5:
 			y22.Day05()
+		case 6:
+			y22.Day06()
 		default:
 			fmt.Println("Did not participate that day")
 		}
